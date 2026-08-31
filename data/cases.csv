@@ -1,0 +1,31 @@
+case_id,symptom,topology_note,concept_tag,severity,show_outputs,expected_fault,osi_layer
+NET-001,PC1 cannot reach Server1 in VLAN 30,Router-on-a-stick topology,interface down,high,"GigabitEthernet0/0.30 is administratively down, line protocol is down",Administratively down,1
+NET-002,No internet access for VLAN 10,Core switch configuration,trunking,medium,Vlan 30 not allowed on trunk,Missing VLAN on trunk,2
+NET-003,Guest Wi-Fi can reach internal server,Wireless controller setup,security,high,"access-list 10 permit 192.168.1.0 255.255.255.0",Wrong subnet mask in ACL,3
+NET-004,DHCP not assigning IPs to PCs,Branch router configuration,dhcp,medium,"ip helper-address is missing",Missing helper-address,3
+NET-005,Cannot ping default gateway,Layer 3 switch routing,ip conflict,high,duplicate address 192.168.1.10 on Vlan10,IP address conflict,3
+NET-006,Inter-VLAN routing fails between VLAN 10 and 20,Distribution layer,routing,high,ip routing is not enabled,Missing default route,3
+NET-007,NAT overload not translating addresses,Edge router,nat,medium,ip nat inside source list 1 interface GigabitEthernet0/1,Missing NAT overload,3
+NET-008,OSPF neighbor adjacency not forming,Core network,routing,high,passive-interface default,OSPF passive interface,3
+NET-009,ACL blocking legitimate web traffic,Firewall inside interface,acl,medium,"access-list 100 deny tcp any any eq 80",Wrong subnet mask in ACL,3
+NET-010,DNS resolution failing for all users,Server farm,routing,medium,"ip domain-lookup is disabled",Missing default route,3
+NET-011,PC1 cannot reach Server1 in VLAN 30,Router-on-a-stick topology,interface down,high,"GigabitEthernet0/0.30 is administratively down, line protocol is down",Administratively down,1
+NET-012,No internet access for VLAN 10,Core switch configuration,trunking,medium,Vlan 30 not allowed on trunk,Missing VLAN on trunk,2
+NET-013,Guest Wi-Fi can reach internal server,Wireless controller setup,security,high,"access-list 10 permit 192.168.1.0 255.255.255.0",Wrong subnet mask in ACL,3
+NET-014,DHCP not assigning IPs to PCs,Branch router configuration,dhcp,medium,"ip helper-address is missing",Missing helper-address,3
+NET-015,Cannot ping default gateway,Layer 3 switch routing,ip conflict,high,duplicate address 192.168.1.10 on Vlan10,IP address conflict,3
+NET-016,Inter-VLAN routing fails between VLAN 10 and 20,Distribution layer,routing,high,ip routing is not enabled,Missing default route,3
+NET-017,NAT overload not translating addresses,Edge router,nat,medium,ip nat inside source list 1 interface GigabitEthernet0/1,Missing NAT overload,3
+NET-018,OSPF neighbor adjacency not forming,Core network,routing,high,passive-interface default,OSPF passive interface,3
+NET-019,ACL blocking legitimate web traffic,Firewall inside interface,acl,medium,"access-list 100 deny tcp any any eq 80",Wrong subnet mask in ACL,3
+NET-020,DNS resolution failing for all users,Server farm,routing,medium,"ip domain-lookup is disabled",Missing default route,3
+NET-021,PC1 cannot reach Server1 in VLAN 30,Router-on-a-stick topology,interface down,high,"GigabitEthernet0/0.30 is administratively down, line protocol is down",Administratively down,1
+NET-022,No internet access for VLAN 10,Core switch configuration,trunking,medium,Vlan 30 not allowed on trunk,Missing VLAN on trunk,2
+NET-023,Guest Wi-Fi can reach internal server,Wireless controller setup,security,high,"access-list 10 permit 192.168.1.0 255.255.255.0",Wrong subnet mask in ACL,3
+NET-024,DHCP not assigning IPs to PCs,Branch router configuration,dhcp,medium,"ip helper-address is missing",Missing helper-address,3
+NET-025,Cannot ping default gateway,Layer 3 switch routing,ip conflict,high,duplicate address 192.168.1.10 on Vlan10,IP address conflict,3
+NET-026,Inter-VLAN routing fails between VLAN 10 and 20,Distribution layer,routing,high,ip routing is not enabled,Missing default route,3
+NET-027,NAT overload not translating addresses,Edge router,nat,medium,ip nat inside source list 1 interface GigabitEthernet0/1,Missing NAT overload,3
+NET-028,OSPF neighbor adjacency not forming,Core network,routing,high,passive-interface default,OSPF passive interface,3
+NET-029,ACL blocking legitimate web traffic,Firewall inside interface,acl,medium,"access-list 100 deny tcp any any eq 80",Wrong subnet mask in ACL,3
+NET-030,DNS resolution failing for all users,Server farm,routing,medium,"ip domain-lookup is disabled",Missing default route,3

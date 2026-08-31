@@ -1,0 +1,16 @@
+{
+  "llm_provider": "mock",
+  "models": {
+    "google-genai": "gemini-2.5-pro",
+    "openai": "gpt-4o",
+    "anthropic": "claude-3-5-sonnet-latest",
+    "mock": "mock-model"
+  },
+  "execution_params": {
+    "temperature": 0.0,
+    "max_tokens": 1000
+  },
+  "thresholds": {
+    "confidence_warning": 0.7
+  }
+}
